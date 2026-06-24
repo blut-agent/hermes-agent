@@ -36,7 +36,7 @@ It intentionally excludes things that do not fit typical editor UX, such as mess
 Install Hermes normally, then add the ACP extra:
 
 ```bash
-pip install -e '.[acp]'
+cd ~/.hermes/hermes-agent && uv pip install -e '.[acp]'
 ```
 
 This installs the `agent-client-protocol` dependency and enables:
@@ -242,7 +242,7 @@ Check:
 - In Zed, open the ACP Registry with `zed: acp registry` and search for **Hermes Agent**.
 - For manual/local development, verify the custom `agent_servers` command points to `hermes acp`.
 - Hermes is installed and on your PATH.
-- The ACP extra is installed (`pip install -e '.[acp]'`).
+- The ACP extra is installed (`cd ~/.hermes/hermes-agent && uv pip install -e '.[acp]'`).
 - `uv` is installed if launching from the official Zed registry entry.
 
 ### ACP starts but immediately errors
